@@ -1,5 +1,0 @@
-# this program asks the users name and greets them
-print('What is your name?') # ask for their name
-myName = input()
-print('Hi ' + myName + '! Nice to meet you!')
-print('Welcome to the programming course!')
