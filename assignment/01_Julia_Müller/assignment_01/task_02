@@ -1,5 +1,5 @@
 # this program lets the user type in a word and reverses that word
 print('Please type in a word.')
 myWord = input()
-for char in reversed(myWord):
-    print(char)
+for i in reversed(myWord):
+    print(i)
