@@ -1,0 +1,17 @@
+print('Please put in an upper bound number.')
+upperbound= int(input())
+
+f0 = 0
+f1 = 1
+
+fibonacci = 1
+
+if upperbound ==0:
+  print(0)
+else:
+  print(0)
+  while fibonacci <= upperbound:
+    print(fibonacci)
+    fibonacci= f0+f1
+    f0=f1
+    f1=fibonacci
