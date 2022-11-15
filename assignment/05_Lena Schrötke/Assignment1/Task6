@@ -1,6 +1,17 @@
 # Task 6:
 # Write a program that reads a non-negative integer number in the decimal representation provided by the
 # user and prints the octal representation of the number. For example, if the user enters 167, the output should be 247.
+
+while True:
+    number = int(input("Please enter a non-negative number: "))
+    if number < 0:
+        print("This number is not valid. Please enter a non-negative number.")
+    else:
+        break
+
+# print the octal number and slice the 0o
+print(oct(number)[2:])
+
 # Write a more general program that reads in a non-negative number (potentially including decimal places)
 # in the decimal representation provided by the user and prints the octal representation of the number.
 # For example, if the user enters 25.11, the output should be 31.0702436560507534.
