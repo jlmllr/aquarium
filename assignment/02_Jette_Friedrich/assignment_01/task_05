@@ -12,10 +12,9 @@ while True:
   else:
     break
 
-
 if a==b==c:
-  print('Your triangle is equiliteral.')
+  print('Your triangle is equiliteral and isoscele.')
 elif (a==b) or (b==c) or (c==a):
-    print('Your triangle is isoscele.')
+  print('Your triangle is isoscele.')
 elif (a<b) or (a>b) and (b<c) or (b>c) and (c<a) or (c>a):
-      print('Your triangle is scalene.')
+  print('Your triangle is scalene.')
