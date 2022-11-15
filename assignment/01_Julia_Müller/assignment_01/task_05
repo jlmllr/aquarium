@@ -1,0 +1,14 @@
+# this program asks the user to input the lengths of the sides in a triangle and outputs whether the triangle is equilateral, isosceles, or scalene
+# this program also checks for the Triangles inequality (z<x+y), and prompts the user for a valid input
+x = float(input('Please enter the length of the first triangle side:'))
+y = float(input('Please enter the length of the second triangle side:'))
+z = float(input('Please enter the length of the third triangle side:'))
+
+if x >= y + z or y >= x + z or z >= x + y:
+    print('Your lengths are not valid, please put in valid triangle side lengths.')
+elif x == y and x == z and y == z:
+    print('Your triangle is an equilateral triangle.')
+elif x == y or x == z or y == z:
+    print('Your triangle is an isosceles triangle.')
+elif x != y and x != z and y != z:
+    print('Your triangle is a scalene triangle.')
