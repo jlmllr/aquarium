@@ -1,0 +1,14 @@
+# this program reads in an upper bound (number) provided by the user and prints the sequence of Fibonacci numbers that are less or equal to the number given by the user
+upperbound = int(input("Please input an upper bound number: "))
+f0 = 0
+f1 = 1
+fibunacci = 1
+if upperbound == 0:
+    print(0)
+else:
+    print(0)
+    while fibunacci <= upperbound:
+        print(fibunacci)
+        fibunacci = f0 + f1
+        f0 = f1
+        f1 = fibunacci
