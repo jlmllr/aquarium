@@ -1,0 +1,4 @@
+print("please put in your name:")
+yourname = input()
+print("Hello " + yourname  + " nice to meet you!")
+print("welcome to the programming course, " + yourname + "!")
