@@ -9,7 +9,7 @@ while True:
     else:
         break
 
-# print the octal number and slice the 0o
+# print the octal number and don't show the 0o
 print(oct(number)[2:])
 
 # Write a more general program that reads in a non-negative number (potentially including decimal places)
