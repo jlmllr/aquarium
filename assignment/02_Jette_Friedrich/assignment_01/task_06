@@ -1,0 +1,5 @@
+print('Please type in a non-negative number.')
+i= int(input())
+print(oct(i))
+
+
