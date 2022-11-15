@@ -1,0 +1,20 @@
+# Task 3:
+# Write a program that reads an upper bound (number) provided by the user and prints the sequence Fibonacci
+# numbers that are less or equal to the number given by the user. Use a loop for this task.
+# The Fibonacci sequence is defined as Fn = Fn-1. Use F0 = 0 and F1 = 1 as seed values.
+
+upperBound = int(input("Please insert a number: "))
+
+F0 = 0
+F1 = 1
+fibonacci = 1
+
+if upperBound == 0:
+    print(0)
+else:
+    print(0)
+    while fibonacci <= upperBound:
+        print(fibonacci)
+        fibonacci = F0 + F1
+        F0 = F1
+        F1 = fibonacci
