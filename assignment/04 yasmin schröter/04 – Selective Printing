@@ -1,0 +1,6 @@
+upperBound = int(input("Please input a upper bound number: "))
+
+for number in range(upperBound+1):
+    if number % 3 == 0 and number != 0:
+        continue
+    print(number)
