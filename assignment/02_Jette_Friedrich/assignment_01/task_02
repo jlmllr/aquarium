@@ -1,0 +1,8 @@
+print('Please put in a word.')
+myword=input()
+if len(myword) > 1:
+    list(myword)
+    print(myword[::-1])
+
+else:
+    print('Your word is too short. Please type in a longer word.')
