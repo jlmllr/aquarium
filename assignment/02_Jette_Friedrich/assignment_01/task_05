@@ -1,0 +1,21 @@
+while True:
+  print('Please put in the length of your triangle\'s first side.')  
+  a= float(input())
+  print('Please put in the length of your triangle\'s second side.')
+  b= float(input())
+  print('Please put in the length of your triangle\'s third side.')
+  c= float(input())
+  
+  if a>=b+c or b>=c+a or c>= a+b:
+   print('Your triangle\'s sides are invalid. Please put in other lengths.')
+
+  else:
+    break
+
+
+if a==b==c:
+  print('Your triangle is equiliteral.')
+elif (a==b) or (b==c) or (c==a):
+    print('Your triangle is isoscele.')
+elif (a<b) or (a>b) and (b<c) or (b>c) and (c<a) or (c>a):
+      print('Your triangle is scalene.')
