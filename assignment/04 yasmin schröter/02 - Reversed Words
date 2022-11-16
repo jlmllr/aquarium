@@ -6,5 +6,4 @@ def reverse_string(s):
 
 input_str = input("Please enter a word: ")
 
-if __name__ == "__main__":
-    print('reversed word: ' + reverse_string(input_str))
+print('reversed word: ' + reverse_string(input_str))
