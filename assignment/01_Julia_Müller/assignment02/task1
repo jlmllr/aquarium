@@ -1,0 +1,7 @@
+#  this program reads in a string and prints the length of the input string without using the len function
+print('Please enter a word')
+myWord = input()
+count = 0
+for i in myWord:
+    count = count+1
+print('The length of your word is', count)
