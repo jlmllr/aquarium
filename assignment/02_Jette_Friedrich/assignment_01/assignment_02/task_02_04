@@ -1,0 +1,15 @@
+import random
+t = random.randint(1,100), random.randint(1,100), random.randint(1,100)
+t1 = random.randint(1,100), random.randint(1,100), random.randint(1,100)
+t2 = random.randint(1,100), random.randint(1,100), random.randint(1,100)
+t3 = random.randint(1,100), random.randint(1,100), random.randint(1,100)
+t4 = random.randint(1,100), random.randint(1,100), random.randint(1,100)
+t5 = random.randint(1,100), random.randint(1,100), random.randint(1,100)
+t6 = random.randint(1,100), random.randint(1,100), random.randint(1,100)
+t7 = random.randint(1,100), random.randint(1,100), random.randint(1,100)
+t8 = random.randint(1,100), random.randint(1,100), random.randint(1,100)
+t9 = random.randint(1,100), random.randint(1,100), random.randint(1,100)
+listOfTuples = [t,t1,t2,t3,t4,t5,t6,t7,t8,t9]
+print(listOfTuples)
+listOfTuples.sort(key= lambda a: a[2])
+print(listOfTuples)
