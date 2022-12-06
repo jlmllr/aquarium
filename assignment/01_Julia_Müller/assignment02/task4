@@ -1,0 +1,17 @@
+# this program generates a list of 10 tuples, each tuple consisting of 3 random integers between 1 and 100
+# sorts the list of tuples in increasing order of the third element in each tuple
+# and prints the sorted list of tuples
+import random
+t1 = [random.randint(1,100),random.randint(1,100),random.randint(1,100)]
+t2 = [random.randint(1,100),random.randint(1,100),random.randint(1,100)]
+t3 = [random.randint(1,100),random.randint(1,100),random.randint(1,100)]
+t4 = [random.randint(1,100),random.randint(1,100),random.randint(1,100)]
+t5 = [random.randint(1,100),random.randint(1,100),random.randint(1,100)]
+t6 = [random.randint(1,100),random.randint(1,100),random.randint(1,100)]
+t7 = [random.randint(1,100),random.randint(1,100),random.randint(1,100)]
+t8 = [random.randint(1,100),random.randint(1,100),random.randint(1,100)]
+t9 = [random.randint(1,100),random.randint(1,100),random.randint(1,100)]
+t10 = [random.randint(1,100),random.randint(1,100),random.randint(1,100)]
+tuplelist = [t1,t2,t3,t4,t5,t6,t7,t8,t9,t10]
+tuplelist.sort(key = lambda i: i[2])
+print(tuplelist)
