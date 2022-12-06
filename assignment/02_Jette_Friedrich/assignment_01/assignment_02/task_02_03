@@ -1,0 +1,5 @@
+print('Please put in one or multiple words.')
+words = input()
+def remove(words):
+  return words.replace(" ","")
+print(remove(words))
