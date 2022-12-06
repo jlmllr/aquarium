@@ -1,0 +1,9 @@
+# this program reads in a string and removes any spaces from the string
+# counts how often individual characters occur in the string
+# stores the information on character occurrence frequency in a dictionary
+# and prints the dictionary
+from collections import Counter
+print('Please enter a word')
+myWord = input()
+myWordCounted = Counter(myWord)
+print(str(myWordCounted))
