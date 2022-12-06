@@ -1,0 +1,5 @@
+# this program generates a list of 10 random integers between 1 and 100 and then finds and prints the largest element in the list without using the max function
+import random
+numbers = [random.randint(1,100) for i in range(10)]
+print(sorted(numbers))
+print(sorted(numbers) [-1])
