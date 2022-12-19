@@ -20,12 +20,18 @@ for key in keys:
 # e.g., withdrawing negative amounts or overdrawing the account, etc.
 
 deposit = int(input('Please enter the amount of money you want to deposit: '))
-if deposit < 1:
+if deposit < 0:
     print('You can not deposit negative amounts of money.')
 elif deposit >= 5000:
     print('You can not deposit more than 5000 Euros at a time.')
 else:
-    customers['customer4'] = + deposit
+    newsum = customers['customer4'] = + deposit
+    if newsum < 0:
+        print('The amount of money in your account is '+ str(newsum))
+        print('Your bank account is in the red')
+    else:
+        print('The amount of money in your bank account is ' + str(newsum))
+
 
 withdraw = int(input('Please enter the amount of money you want to withdraw: '))
 if withdraw <= 0:
@@ -33,5 +39,11 @@ if withdraw <= 0:
 elif withdraw >= 5000:
     print('You can not withdraw more than 5000 Euros at a time')
 else:
-    customers['customer4'] = - withdraw
+    newsum2 = customers['customer5'] = - withdraw
+    if newsum2 < 0:
+        print('The amount of money in your account is '+ str(newsum2))
+        print('Your bank account is in the red')
+    else:
+        print('The amount of money in your bank account is ' + str(newsum2))
+
 print(customers)
