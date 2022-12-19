@@ -1,0 +1,37 @@
+# Imagine you have to write a (very simple) bookkeepingsystem for a bank that keeps track
+# of the account balances of each of its customers
+
+# 1. Write a function that spans a dictionary holding a default balance of 0 for an initial list of customers
+# For simplicity, assume customer names are unique identifier
+# (optional) Can you express that same functionality using a lambda function?
+
+customers = {'customer1': 0, 'customer2': 0, 'customer3': 0, 'customer4': 0, 'customer5': 0, 'customer6': 0}
+
+# 2. What are elegant ways to add or remove single and multiple customers using the functionality of dict?
+
+customers.update({'newcustomer1': 0, 'newcustomer2': 0, 'newcustomer3': 0})
+customers.pop('customer1')          # or for multiple customers
+keys = ('customer2', 'customer3')
+for key in keys:
+    customers.pop(key, None)
+
+# 3. Now write two simple functions that allow you to deposit and withdraw money for a given bank customer
+# 4. Include error messages for inputs that are not permissible
+# e.g., withdrawing negative amounts or overdrawing the account, etc.
+
+deposit = int(input('Please enter the amount of money you want to deposit: '))
+if deposit < 1:
+    print('You can not deposit negative amounts of money.')
+elif deposit >= 5000:
+    print('You can not deposit more than 5000 Euros at a time.')
+else:
+    customers['customer4'] = + deposit
+
+withdraw = int(input('Please enter the amount of money you want to withdraw: '))
+if withdraw <= 0:
+    print('You can not withdraw negative amounts of money.')
+elif withdraw >= 5000:
+    print('You can not withdraw more than 5000 Euros at a time')
+else:
+    customers['customer4'] = - withdraw
+print(customers)
