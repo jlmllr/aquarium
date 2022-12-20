@@ -1,1 +1,3 @@
-heelloo
+customersDict = {'customer 0': 0, 'customer 1': 0, 'customer 2': 0}
+
+customersDict
