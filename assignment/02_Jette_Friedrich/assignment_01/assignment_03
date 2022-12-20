@@ -8,3 +8,31 @@ customersDict.pop('customer 0')                                                 
 keys = ('another customer 0', 'another customer 1')
 for key in keys:
     customersDict.pop(key, 0)
+
+deposit = int(input("What amount of money do you want to deposit? "))
+if deposit < 0:
+    print("You can't deposit a negative amount of money.")
+
+else:
+    balance = customersDict['customer 1'] =+ deposit
+    if balance < 0:
+        print("You have the following amount of money in your account: " + str(balance))
+        print("You might have a problem.")
+
+    else:
+        print("You have the following amount of money in your account: " + str(balance))
+
+
+withdraw = int(input("What amount of money do you want to withdraw? "))
+
+if withdraw <= 0:
+    print("You can't withdraw a negative amount of money.")
+else:
+    balance_withdraw = customersDict['customer 2'] =- withdraw
+    if balance_withdraw < 0:
+        print("You have the following amount of money in your account: " + str(balance_withdraw))
+        print("You might have a problem.")
+    else:
+        print("You have the following amount of mponey in your account: " + str(balance_withdraw))
+
+print(customersDict)
